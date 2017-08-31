@@ -1,0 +1,19 @@
+{
+  "name": "veawco",
+  "version": "0.0.0",
+  "description": "version aware coding PoC",
+  "main": "index.js",
+  "author": "Frederik Batuna <gobi301@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "precommit": "yarn run flow"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.53.1",
+    "husky": "^0.14.3"
+  }
+}
